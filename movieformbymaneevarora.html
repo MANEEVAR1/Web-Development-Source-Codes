@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Practice project on HTML forms in which I have made a form for booking movie tickets online by give some inputs">
+    <meta name="author" content="Maneev Arora">
+    <title>Movie Ticket Booking Form</title>
+    <style>
+        /* *{
+            color: blueviolet;
+        } */
+        .mtb{
+            text-align: center;
+            background-color: rgb(85, 172, 175);
+            color: gold;
+            text-shadow: 2px 3px 6px black;
+        }
+        .h2{
+            background-color:rgb(85, 172, 175);
+            color: gold;
+            text-shadow: 2px 3px 6px black;
+        }
+        .thanks{
+            text-align: center;
+            color: gold;
+            text-shadow: 2px 3px 6px black;
+            background-color: rgb(85, 172, 175);
+        }
+        body{
+            background-color: grey;
+        }
+        .f{
+            text-align: center;
+            color: gold;
+            text-shadow: 2px 3px 6px black;
+            background-color: rgb(85, 172, 175);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="mtb">Movie Ticket Booking</h1>
+    </header>
+    <main>
+        <section>
+        <h2 class="h2">Login/Sign In Page</h2>
+        <form action="post">
+            <label for="username" style="text-shadow: 2px 3px 6px whitesmoke; font-weight: bold;">Enter Your Username:</label>
+            <input type="text" name="username" id="username" placeholder="Enter Your Username" required autofocus style="background-color: aliceblue;">
+            <BR></BR>
+            <label for="pw" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Enter Your Password:</label>
+            <input type="password" name="password" id="pw" placeholder="Enter Your Password" required style="background-color: aliceblue;">
+            <BR></BR>
+            <input type="submit">
+        </form>
+        </section>
+        <hr>
+        <section>
+        <h2 class="h2">Movies Currently Shown</h2>
+        <img src="https://lensmenreviews.com/wp-content/uploads/2014/01/the-wolf-of-wallstreet-review.jpg" alt="Wolf of the Wall Street" width="400" height="250" preload style="margin-left:14px;">
+        <img src="https://www.deccanchronicle.com/h-upload/2024/07/15/1824120-zndm.webp" alt="ZNMD" width="400" height="250" preload style="margin-left: 141px;">
+        <img src="https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale/resources/0-0-105985/list/rockstarhi1170x658.jpg" alt="Rockstar" width="400" height="250" preload style="margin-left: 140px;">
+        <hr>
+        </section>
+        <h2 class="h2">User Information</h2>
+        <form action="post">
+            <label for="name" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Enter Your Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required style="background-color: aliceblue;">
+            <BR></BR>
+            <label for="contactno" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Enter Your Phone Number:</label>
+            <input type="tel" name="contactno" id="contactno" placeholder="Enter Phone Number" required style="background-color: aliceblue;">
+            <BR></BR>
+            <label for="email" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Enter Your Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required style="background-color: aliceblue;">
+            <BR></BR>
+            <label for="movie" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Movie Selection:</label>
+            <select name="movie" id="movie" style="background-color: aliceblue;">
+                <option value=""disabled selected>--Select Movie--</option>
+                <option value="WOTWS">Wolf of the Wall Street</option>
+                <option value="ZNMD">Zindagi Na Milegi Dobara</option>
+                <option value="RS">Rockstar</option>
+            </select>
+            <BR></BR>
+            <label for="date" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Select Date:</label>
+            <input type="date" name="date" id="date" required style="background-color: aliceblue;">
+            <BR></BR>
+            <label for="time" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Select Time:</label>
+            <input type="time" name="time" id="time" style="background-color: aliceblue;">
+            <BR></BR>
+            <label for="nop" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Enter Number of Viewers:</label>
+            <input type="number" name="nop" id="nop" required style="background-color: aliceblue;">
+            <BR></BR>
+            <label for="" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">Payment Method:</label>
+            <label for="UPI" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">UPI</label>
+            <input type="radio" name="paymentm" id="UPI" required>
+            <label for="NetB" style="text-shadow: 2px 3px 5px whitesmoke; font-weight: bold;">NetBanking</label>
+            <input type="radio" name="paymentm" id="NetB" required>
+            <BR></BR>
+            <input type="submit">
+        </form>
+        <hr>
+        <section>
+        <h1 class="thanks">Thank You for your Booking!</h1>
+        <h3 class="thanks">Ticket Number:007</h3>
+        <h3 class="thanks">Show Timings: As Selected</h3>
+        </section>
+    </main>
+    <footer>
+        <h5 class="f">Made by Maneev Arora</h5>
+    </footer>
+</body>
+</html>
