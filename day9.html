@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of selectors and specificity</title>
+    <style>
+        *{
+            color:coral;
+        }
+        /* div p{
+            background-color: blue;
+            color: yellow;
+        } */
+
+        /* p{
+            color:blueviolet
+        } */
+        #id1,
+        #id2 {
+            background-color: brown;
+            color:yellow
+        }
+
+        /* #id2{
+            background-color: chartreuse;
+         } */
+        .c1 {
+            border: 2px solid green;
+            background-color: aqua;
+            color: cornflowerblue
+        }
+        a:visited{color:crimson;}
+        a:link{color:darkgreen}
+        a:hover{color: yellow;}
+        a:active{color:lightpink}
+
+        /* p:first-child{
+            background-color: greenyellow;
+            color:grey
+        } */
+        p:nth-child(2){
+            background-color: darkkhaki;
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="id1">
+        Hey I am a div
+    </div>
+    <p id="id2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, veritatis blanditiis autem unde
+        minus enim nostrum eos architecto in perspiciatis quae vero aperiam porro optio rerum asperiores laborum et
+        corporis exercitationem sit nisi sunt perferendis reprehenderit quo? Voluptatem, beatae quas placeat dolores
+        vero quo repellendus!</p>
+    <p class="c1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, et doloremque! Earum in possimus,
+        sed dicta alias nulla. Voluptatum modi quod animi totam? Magnam, enim nemo adipisci molestiae dignissimos
+        dolores veritatis consequatur aspernatur deserunt libero?</p>
+        <div>
+            <!-- <img src="" alt=""> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque voluptates voluptatum exercitationem, voluptas minus quo! Harum eum repudiandae odio ratione quaerat repellendus rem maxime.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, omnis. Voluptatem et ipsa, eligendi numquam natus suscipit asperiores maxime modi!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis dicta laboriosam quisquam deserunt doloremque?</p></div>
+        <a href="https://www.apple.com" target="_blank">Apple</a>
+        <a href="https://www.oppo.com" target="_blank">Oppo</a>
+        <a href="https://www.oneplus.com" target="_blank">OnePlus</a>
+</body>
+<!-- element, id, class, pseudo, child, descendant, universal, first child, nth-child -->
+
+</html>
