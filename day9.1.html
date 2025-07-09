@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity in CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: blue;
+        }
+        div{
+            background-color: purple;
+            color: hotpink;
+        }
+        p{
+            background-color: yellow;
+            color: red;
+        }
+        #id1{
+            background-color: red;
+            color: lightblue;
+        }
+        .c1{
+            background-color: black !important;
+            color:white;
+        }
+        *{
+            color:brown
+        }
+    </style>
+</head>
+<body style="background-color: darkorange;">
+    <div><p class="c1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis saepe optio, repellendus architecto consectetur odit cum quod repellat beatae porro dolor unde minus, quia similique delectus at, quae tempora nemo ipsa ratione. Iusto error vel repellendus esse expedita asperiores aperiam quibusdam, sunt rem, sint accusantium!</p></div>
+    <div class="c1" style="background-color: darkblue; color: bisque;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, itaque animi explicabo magni illum ad provident, atque eius laboriosam repellat non voluptatum omnis voluptas. Pariatur vel iusto iste asperiores earum.
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consectetur quia hic molestias eos corrupti. Maiores veritatis fugit sed nulla quibusdam sequi quisquam dolor recusandae, perspiciatis sunt officia ducimus soluta aliquam quidem, laborum quia dicta? Provident quia ducimus vitae est ut reiciendis atque nihil molestias.</p>
+</body>
+
+<!-- a.css#id1{} -->111
+
+<!-- whenever the type of selector is same then positioning wins -->
+ <!-- id selector is having more priority than element selector -->
+  <!-- inline css has the most priority points -->
+   <!-- class specificity is superior than element specificity -->
+    <!-- inline>id>class>element>universal -->
+     <!-- 10000>1000>100>10>1>0 -->
+</html>
