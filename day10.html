@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .c2{
+            margin: 30px;
+            padding: 15px;
+            border: 5px solid black;
+            width: 500px;
+            box-sizing: border-box;
+        }
+
+        .c1{
+            margin: 40px;
+            padding: 40px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="c2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora totam sint nisi, veniam fugit aliquid earum voluptatum, beatae voluptas ullam ipsum maxime magni enim, natus velit impedit perferendis. Cupiditate iure sunt nemo optio quos corporis vero, suscipit soluta dolor illum quaerat in accusantium eaque veniam, facere ratione? Voluptates officiis labore, magnam quos hic, natus ab delectus dolorum sunt eius adipisci rem repudiandae inventore vitae, dolores facilis sed maxime recusandae aspernatur rerum! Saepe accusantium velit et labore incidunt. Sequi veritatis vel delectus nam modi suscipit autem similique, quos aut velit architecto est aliquid rem incidunt error beatae laboriosam. Ex, voluptate vel?
+    </div>
+    <div class="c1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum earum dignissimos omnis odio debitis atque corporis nemo alias excepturi. Voluptatem exercitationem veritatis adipisci debitis magni, eum totam molestias nam cupiditate vitae natus dolores consequatur sit assumenda non laudantium optio voluptate enim eaque magnam quisquam iste?</div>
+</body>
+<!-- In CSS box model first thing is content then we have padding then border and then margin -->
+ <!-- margin collapse means that whenever two box's margins collide with each other then the box with the larger margin value will overtake and apply itself in the common region  -->
+  <!-- total height=top padding+botom padding+top margin +bottom margin+top border+bottom border -->
+<!-- when box-sizing:border box is applied that means that now the height of the box is equal to padding+content+border -->
+</html>
