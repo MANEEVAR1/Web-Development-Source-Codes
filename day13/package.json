@@ -1,0 +1,13 @@
+{
+  "name": "day13",
+  "version": "1.0.0",
+  "description": "this is day 13 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"node abcd.js"
+
+  },
+  "author": "Akshat",
+  "license": "ISC"
+}
