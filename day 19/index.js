@@ -73,20 +73,16 @@ let jsonString = JSON.stringify(student)
 
 
 // JSON declaration
-let json = {
-    "name": "Adeel Solangi",
-    "language": "Sindhi",
-    "id": "V59OF92YF627HFY0",
-    "bio": "Donec lobortis eleifend condimentum. Cras dictum dolor lacinia lectus vehicula rutrum. Maecenas quis nisi nunc. Nam tristique feugiat est vitae mollis. Maecenas quis nisi nunc.",
-    "version": 6.1
-  }
+let json = '{"name":"Akshat","rollNo":"23AI07","course":"B.Tech"}'
 
 
-// console.log(json)
+console.log(json)
 
-// let obj1 = JSON.parse(json)
-// console.log(typeof json)
-
+let obj1 = JSON.parse(json)
+console.log(obj1)
+console.log(typeof obj1)
+console.log(typeof json)
+console.log(obj1.rollNo)
 
 // {
 //     "name": "Adeel Solangi",
